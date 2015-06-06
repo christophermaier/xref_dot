@@ -1,26 +1,25 @@
 -module(xref_dot).
 
-%% Pass in formatting functions in a proplist.
-%% Have default functions for, say, call graphs
-%% Selectively disable certain things with no-op functions
-%% Stick all the purely dot-related functions in one module
-%% Unit tests!
-%% Functional tests! (can it generate something that dot can parse?)
-%% erlang.mk
-%% Module for ready-made graph functions, bundling analysis with graph
+%% * Pass in formatting functions in a proplist.
+%% * Have default functions for, say, call graphs
+%% * Selectively disable certain things with no-op functions
+%% * Stick all the purely dot-related functions in one module
+%% * Unit tests!
+%% * Functional tests! (can it generate something that dot can parse?)
+%% * DONE erlang.mk
+%% * Module for ready-made graph functions, bundling analysis with graph
 %%   creation. Can override formatting functions as needed by passing in
 %%   a proplist of options, which will get prepended onto any defaults.
-%% Stick xref queries into another module
+%% * Stick xref queries into another module
 %%   tests for them will be a little trickier... run it on a few
 %%   open-source projects at specific tags?
-%% Toggle clustered subgraphs with a function that prepends "cluster"
+%% * Toggle clustered subgraphs with a function that prepends "cluster"
 %%   to a name function.
-%% Create an "extract cluster from node" function to pass into the
+%% * Create an "extract cluster from node" function to pass into the
 %%   dict-generating function
-%% extract call-graph-specific formatting functions to separate module
-%% Pass in attributes as a list of arbitrary functions; map over them
+%% * extract call-graph-specific formatting functions to separate module
+%% * Pass in attributes as a list of arbitrary functions; map over them
 %%   all to generate a node's attributes, e.g.
-%%
 %%
 %% Further Graphviz ideas:
 %% 1. Process tree of live server (see evernote note for some code)
